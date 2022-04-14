@@ -8,3 +8,11 @@ A linked list is a linear collection of data/value elements where their order is
 The first linked list cpp file will cover creating a linked list struct with a local head while the second cpp file goes over a linked list struct with a global head. Both go on to show how to implement print, insert (at start, end, index), reverse, and delete functions. As a bonus, both will also show how to print and reverse the linked list recursively.  
 
 ![image](https://user-images.githubusercontent.com/100814612/163313907-1522e02b-b3e0-493f-b1c2-54a600e6a5f1.png)
+
+**Doubly Linked List**
+--------------------
+A doubly linked list is a linked data structure that has a set of linked nodes. Each node contains three elements: two link fields (pointing to the one behind and one in front) and one data field (usually an integer).
+
+In the doubly linked list cpp file, the code covers inserting before the head, inserting at the end of the list, inserting after a specific node, printing the list, reversing the list, deleting a specific node, and deleting a node at any index.
+
+![image](https://user-images.githubusercontent.com/100814612/163319019-cb3246a4-be1b-4b4e-b659-6ead75abc6d3.png)
