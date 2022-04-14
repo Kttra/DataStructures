@@ -13,9 +13,9 @@ struct Node {
     struct Node* prev;
 };
   
-void InsertAtFront(struct Node* &head, int new_data);
-void InsertAfter(struct Node* prev_node, int new_data);
-void InsertAtEnd(struct Node* &head, int new_data);
+void InsertAtFront(struct Node* &head, int value);
+void InsertAfter(struct Node* prevNode, int value);
+void InsertAtEnd(struct Node* &head, int value);
 void Print(struct Node* node);
 void reverse(Node* &head);
 void deleteNodeAtGivenPos(struct Node* &head, int n);
@@ -68,13 +68,13 @@ void reverse(Node* &head)  {
 }  
 
 //Inserts node at the front of the list
-void InsertAtFront(struct Node* &head, int new_data)
+void InsertAtFront(struct Node* &head, int value)
 {
     //Allocate memory for New node
     struct Node* newNode = new Node();
     
     //Assign data to new node
-    newNode->data = new_data;
+    newNode->data = value;
     
     //New node is head and previous is null, since we are adding at the front
     newNode->next = head;
@@ -88,10 +88,10 @@ void InsertAtFront(struct Node* &head, int new_data)
     head = newNode;
 }
 
-// Given a node as prev_node, insert a new node after the given node
-void InsertAfter(struct Node* prev_node, int new_data){
+// Given a node as prevNode, insert a new node after the given node
+void InsertAfter(struct Node* prevNode, int value){
     //Check if prev node is null
-    if (prev_node == NULL){
+    if (prevNode == NULL){
         cout<<"Previous node is required, it cannot be NULL";
         return;
     }
@@ -100,16 +100,16 @@ void InsertAfter(struct Node* prev_node, int new_data){
     struct Node* newNode = new Node;
     
     //Assign data to new node
-    newNode->data = new_data;
+    newNode->data = value;
     
     //Set next of newnode to next of prev node
-    newNode->next = prev_node->next;
+    newNode->next = prevNode->next;
     
     //Set next of prev node to newnode
-    prev_node->next = newNode;
+    prevNode->next = newNode;
     
     //Now set prev of newnode to prev node
-    newNode->prev = prev_node;
+    newNode->prev = prevNode;
     
     //Set prev of new node's next to newnode
     if (newNode->next != NULL)
@@ -117,14 +117,14 @@ void InsertAfter(struct Node* prev_node, int new_data){
 }
   
 //insert a new node at the end of the list
-void InsertAtEnd(struct Node* &head, int new_data){
+void InsertAtEnd(struct Node* &head, int value){
     //Allocate memory for node
     struct Node* newNode = new Node;
 
     struct Node* last = head; //Set last node value to head
 
     //Set data for new node
-    newNode->data = new_data;
+    newNode->data = value;
 
     //New node is the last node , so set next of new node to null
     newNode->next = NULL;
@@ -193,7 +193,7 @@ void deleteNode(Node* &head, Node* del){
     return;
 }
 
-//Delete the node at the given position in the doubly linked list
+//Delete the node at the given position in the doubly linked list, index starts at 1
 void deleteNodeAtGivenPos(struct Node* &head, int n){
     //If list is NULL or an invalid position is given
     if (head == NULL || n <= 0){
