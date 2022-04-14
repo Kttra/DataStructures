@@ -18,7 +18,7 @@ void InsertAfter(struct Node* prevNode, int value);
 void InsertAtEnd(struct Node* &head, int value);
 void Print(struct Node* node);
 void reverse(Node* &head);
-void deleteNodeAtGivenPos(struct Node* &head, int n);
+void deleteNodeAtGivenPos(struct Node* &head, int index);
 void deleteNode(Node* &head, Node* del);
 
 int main() {
@@ -194,16 +194,16 @@ void deleteNode(Node* &head, Node* del){
 }
 
 //Delete the node at the given position in the doubly linked list, index starts at 1
-void deleteNodeAtGivenPos(struct Node* &head, int n){
+void deleteNodeAtGivenPos(struct Node* &head, int index){
     //If list is NULL or an invalid position is given
-    if (head == NULL || n <= 0){
+    if (head == NULL || index <= 0){
         return;
     }
  
     Node* current = head;
  
     //Traverse up to the node at position n from the beginning
-    for (int i = 1; current != NULL && i < n; i++){
+    for (int i = 1; current != NULL && i < index; i++){
         current = current->next;
     }
  
