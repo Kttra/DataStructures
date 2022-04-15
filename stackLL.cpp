@@ -7,6 +7,9 @@
 */
 
 #include <iostream>
+#include <stack>
+
+using std::stack;
 
 struct Node{
     int data;
@@ -20,6 +23,7 @@ void Pop();
 bool isEmpty();
 int Top();
 void Print();
+void Reverse();
 
 int main()
 {
@@ -27,6 +31,7 @@ int main()
     Push(5);
     Push(10);
     Pop();
+    //Reverse();
     Print();
 
     return 0;
@@ -91,4 +96,28 @@ void Print(){
         //Assign temp link to temp
         temp = temp->link;
     }
+}
+
+//Reverses the Linked List
+void Reverse(){
+    if(top == NULL){
+        return;
+    }
+
+    stack<Node*> S;
+    Node* temp = top;
+    while(temp != NULL){
+        S.push(temp);
+        temp = temp->link;
+    }
+
+    temp = S.top();
+    top = temp;
+    S.pop();
+    while(!S.empty()){
+        temp->link = S.top();
+        S.pop();
+        temp = temp->link;
+    }
+    temp->link = NULL;
 }
