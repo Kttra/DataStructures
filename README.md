@@ -29,5 +29,6 @@ The source code will show an implementation of a stack as an array and as an obj
 -----------------
 A queue is similar to a stack except it is FIFO. It is a list or collection that has a restriction where insertion can only be performed at the rear and deletion can only be performed at the front.
 
-![image](https://user-images.githubusercontent.com/100814612/163496502-98e219f1-e617-416f-8289-c98707263638.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/163496502-98e219f1-e617-416f-8289-c98707263638.png"><img>
+</p>
