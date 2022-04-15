@@ -24,3 +24,10 @@ A stack is a linear data structure where it follows a particular order in which 
 The source code will show an implementation of a stack as an array and as an object (linked list implementation).
 
 ![image](https://user-images.githubusercontent.com/100814612/163494801-6b9aaa87-60b8-44c9-84b8-f2fc9ab41a54.png)
+
+**Queue**
+-----------------
+A queue is similar to a stack except it is FIFO. It is a list or collection that has a restriction where insertion can only be performed at the rear and deletion can only be performed at the front.
+
+![image](https://user-images.githubusercontent.com/100814612/163496502-98e219f1-e617-416f-8289-c98707263638.png)
+
