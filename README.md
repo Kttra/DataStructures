@@ -32,3 +32,16 @@ A queue is similar to a stack except it is FIFO. It is a list or collection that
 <p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/163496502-98e219f1-e617-416f-8289-c98707263638.png"><img>
 </p>
+
+**Binary Search Tree**
+-----------------
+A Binary Search Tree or a BST is a rooted binary tree data structure with internal nodes that store a value greater than all the values in the node's left subtree and less than those in its right subtree. In other words, it has these properties:
+
+- The value of the key of the left sub-tree is less than the value of its parent (root) node's key.
+- The value of the key of the right sub-tree is greater than or equal to the value of its parent (root) node's key.
+- The left child node has a value smaller than the parent node, and the child node in the right contains a value greater than the parent node.
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/164086536-e2183329-56ca-4cd4-be2e-554657034a1a.png"><img>
+</p>
