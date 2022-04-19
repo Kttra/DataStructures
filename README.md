@@ -7,7 +7,9 @@ A linked list is a linear collection of data/value elements where their order is
 
 The first linked list cpp file will cover creating a linked list struct with a local head while the second cpp file goes over a linked list struct with a global head. Both go on to show how to implement print, insert (at start, end, index), reverse, and delete functions. As a bonus, both will also show how to print and reverse the linked list recursively.  
 
-![image](https://user-images.githubusercontent.com/100814612/163313907-1522e02b-b3e0-493f-b1c2-54a600e6a5f1.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/163313907-1522e02b-b3e0-493f-b1c2-54a600e6a5f1.png"><img>
+</p>
 
 **Doubly Linked List**
 --------------------
@@ -15,7 +17,9 @@ A doubly linked list is a linked data structure that has a set of linked nodes. 
 
 In the doubly linked list cpp file, the code covers inserting before the head, inserting at the end of the list, inserting after a specific node, printing the list, reversing the list, deleting a specific node, and deleting a node at any index.
 
-![image](https://user-images.githubusercontent.com/100814612/163319019-cb3246a4-be1b-4b4e-b659-6ead75abc6d3.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/163319019-cb3246a4-be1b-4b4e-b659-6ead75abc6d3.png"><img>
+</p>
 
 **Stacks**
 -----------------
@@ -23,8 +27,10 @@ A stack is a linear data structure where it follows a particular order in which 
 
 The source code will show an implementation of a stack as an array and as an object (linked list implementation).
 
-![image](https://user-images.githubusercontent.com/100814612/163494801-6b9aaa87-60b8-44c9-84b8-f2fc9ab41a54.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/163494801-6b9aaa87-60b8-44c9-84b8-f2fc9ab41a54.png"><img>
+</p>
+  
 **Queue**
 -----------------
 A queue is similar to a stack except it is FIFO. It is a list or collection that has a restriction where insertion can only be performed at the rear and deletion can only be performed at the front.
